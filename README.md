@@ -1,12 +1,15 @@
 # workingWithStrings
+Write a program that receives a list of variable names written in underscore_case and convert them to camelCase.
+
+The input will come from a textarea inserted into the DOM (already in code), and conversion will happen when the button is pressed.
  /*THIS TEST DATA (pasted to textarea)
-  
-SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
 underscore_case       
 first_name          
 Some_Variable        
 calculate_AGE        
-delayed_departure     
+delayed_departure    
+  
+SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
 underscoreCase      ✅
 firstName           ✅✅
 someVariable        ✅✅✅
