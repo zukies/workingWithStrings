@@ -11,9 +11,7 @@ delayed_departure
   
 SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
 underscoreCase      ✅
-
 firstName           ✅✅
-
 someVariable        ✅✅✅
 calculateAge        ✅✅✅✅
 delayedDeparture    ✅✅✅✅✅
