@@ -26,6 +26,7 @@ document.querySelector("button").addEventListener("click", function () {
   console.log(arr.join("\n"));
   // const rows = text.split('\n');
 });
+<<<<<<< Updated upstream
 
 /*for (const [i, row] of rows.entries()) {
     const [first, second] = row.toLowerCase().trim().split('_');
@@ -35,3 +36,6 @@ document.querySelector("button").addEventListener("click", function () {
     )}`;
     console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
   }*/
+=======
+// THIS IS A TEST
+>>>>>>> Stashed changes
