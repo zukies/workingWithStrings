@@ -15,7 +15,7 @@ document.querySelector("button").addEventListener("click", function () {
     );
     const slicedFromUpperLetter = nextLetterUpper.slice(indexof);
 
-    const lowerCaseLetters = rows.slice(0, indexof - 1).toLowerCase();
+    const lowerCaseLetters = rows.slice(0, indexof - 1).toLowerCase().trim();
 
     emoji = "⌛️";
     repeatEmoji = emoji.repeat(arr.length + 1);
