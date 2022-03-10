@@ -15,7 +15,10 @@ document.querySelector("button").addEventListener("click", function () {
     );
     const slicedFromUpperLetter = nextLetterUpper.slice(indexof);
 
-    const lowerCaseLetters = rows.slice(0, indexof - 1).toLowerCase().trim();
+    const lowerCaseLetters = rows
+      .slice(0, indexof - 1)
+      .toLowerCase()
+      .trim();
 
     emoji = "⌛️";
     repeatEmoji = emoji.repeat(arr.length + 1);
@@ -26,16 +29,3 @@ document.querySelector("button").addEventListener("click", function () {
   console.log(arr.join("\n"));
   // const rows = text.split('\n');
 });
-<<<<<<< Updated upstream
-
-/*for (const [i, row] of rows.entries()) {
-    const [first, second] = row.toLowerCase().trim().split('_');
-    const output = `${first}${second.replace(
-      second[0],
-      second[0].toUpperCase()
-    )}`;
-    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
-  }*/
-=======
-// THIS IS A TEST
->>>>>>> Stashed changes
