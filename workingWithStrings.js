@@ -3,7 +3,7 @@ document.body.append(document.createElement("button"));
 document.querySelector("button").addEventListener("click", function () {
   const text = document.querySelector("textarea").value;
   const splitText = text.split("\n");
-  // const arr = [];
+
   for (const [i, rows] of splitText.entries()) {
     const indexof = rows.indexOf("_") + 1;
 
@@ -24,6 +24,4 @@ document.querySelector("button").addEventListener("click", function () {
 
     console.log(`${all}${repeatEmoji}`);
   }
-  // console.log(arr.join("\n"));
-  // const rows = text.split('\n');
 });
