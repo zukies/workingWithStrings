@@ -4,9 +4,7 @@ document.querySelector("button").addEventListener("click", function () {
   const text = document.querySelector("textarea").value;
   const splitText = text.split("\n");
   // const arr = [];
-  for (const data of splitText.entries()) {
-    const [i, rows] = data;
-
+  for (const [i, rows] of splitText.entries()) {
     const indexof = rows.indexOf("_") + 1;
 
     const nextLetterUpper = rows.replace(
