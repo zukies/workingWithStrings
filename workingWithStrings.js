@@ -6,6 +6,11 @@ document.querySelector("button").addEventListener("click", function () {
 
   for (const [i, rows] of splitText.entries()) {
     const indexof = rows.indexOf("_") + 1;
+    const CapitalLetter = rows
+      .slice(rows.indexOf("_") + 1, rows.indexOf("_") + 2)
+      .toUpperCase();
+
+    const lowerCaseCharacters = rows.slice(rows.indexOf("_") + 2).toLowerCase();
 
     const nextLetterUpper = rows.replace(
       rows.slice(indexof - 1, indexof + 1),
@@ -20,7 +25,9 @@ document.querySelector("button").addEventListener("click", function () {
 
     repeatEmoji = "⌛️".repeat(i + 1);
 
-    const all = (lowerCaseLetters + slicedFromUpperLetter).padEnd(20);
+    const all = (lowerCaseLetters + CapitalLetter + lowerCaseCharacters).padEnd(
+      20
+    );
 
     console.log(`${all}${repeatEmoji}`);
   }
